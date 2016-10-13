@@ -1,5 +1,0 @@
-D:\github\novanet\NetCoreNServiceBus\Contracts\Novanet.NetCoreNServiceBus.Contracts\bin\Debug\Novanet.NetCoreNServiceBus.Contracts.dll
-D:\github\novanet\NetCoreNServiceBus\Contracts\Novanet.NetCoreNServiceBus.Contracts\bin\Debug\Novanet.NetCoreNServiceBus.Contracts.pdb
-D:\github\novanet\NetCoreNServiceBus\Contracts\Novanet.NetCoreNServiceBus.Contracts\obj\Debug\Novanet.NetCoreNServiceBus.Contracts.csprojResolveAssemblyReference.cache
-D:\github\novanet\NetCoreNServiceBus\Contracts\Novanet.NetCoreNServiceBus.Contracts\obj\Debug\Novanet.NetCoreNServiceBus.Contracts.dll
-D:\github\novanet\NetCoreNServiceBus\Contracts\Novanet.NetCoreNServiceBus.Contracts\obj\Debug\Novanet.NetCoreNServiceBus.Contracts.pdb
