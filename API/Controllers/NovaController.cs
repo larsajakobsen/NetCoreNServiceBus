@@ -1,5 +1,6 @@
 
 using Microsoft.AspNetCore.Mvc;
+using Novanet.NetCoreNServiceBus.Contracts;
 using Novanet.NetCoreNServiceBus.Handler.Models;
 
 namespace Novanet.NetCoreNServiceBus.Handler.Controllers
@@ -15,6 +16,8 @@ namespace Novanet.NetCoreNServiceBus.Handler.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] NovaData data)
         {
+            NovaCommand command = new NovaCommand();
+
             return Ok("Post success!");
         }
     }

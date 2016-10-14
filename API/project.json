@@ -1,4 +1,5 @@
 {
+  "name": "MyLibrary",
   "version": "1.0.0-*",
   "buildOptions": {
     "debugType": "portable",
@@ -11,11 +12,12 @@
     "Microsoft.AspNetCore.StaticFiles": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
-    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",    
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
     "Microsoft.Extensions.Logging": "1.0.0",
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
-    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0"
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+    "Novanet.NetCoreNServiceBus.Contracts": "1.0.0.0"
   },
   "frameworks": {
     "netcoreapp1.0": {

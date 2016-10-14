@@ -1,6 +1,6 @@
 ﻿namespace Novanet.NetCoreNServiceBus.Contracts
 {
-    public interface INovaCommand
+    public class NovaCommand
     {
     }
 }

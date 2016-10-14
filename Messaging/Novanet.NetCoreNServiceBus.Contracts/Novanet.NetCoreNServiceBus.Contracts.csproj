@@ -47,7 +47,6 @@
   <ItemGroup>
     <None Include="Novanet.NetCoreNServiceBus.Contracts.project.json" />
     <None Include="project.json" />
-    <None Include="Novanet.NetCoreNServiceBus.Contracts.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
