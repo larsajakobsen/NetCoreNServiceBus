@@ -11,12 +11,17 @@ namespace Novanet.NetCoreNServiceBus.Messaging
     {
         public static void Main()
         {
-            Console.Title = "Samples.StepByStep.Server";
             var busConfiguration = new BusConfiguration();
             busConfiguration.EndpointName("Novanet.NetCoreNServiceBus.Messaging");
             busConfiguration.UseSerialization<JsonSerializer>();
             busConfiguration.EnableInstallers();
             busConfiguration.UsePersistence<InMemoryPersistence>();
+
+            var conventions = busConfiguration.Conventions();
+            conventions.DefiningCommandsAs(type =>
+            {
+                return type.Name.EndsWith("Command");
+            });
 
             using (var bus = Bus.Create(busConfiguration).Start())
             {

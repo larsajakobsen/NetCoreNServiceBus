@@ -1,9 +1,7 @@
 ﻿
 using System;
-using System.Threading.Tasks;
 using Novanet.NetCoreNServiceBus.Contracts;
 using NServiceBus;
-using NServiceBus.Logging;
 
 namespace Novanet.NetCoreNServiceBus.Messaging
 {
@@ -12,7 +10,7 @@ namespace Novanet.NetCoreNServiceBus.Messaging
     {
         public void Handle(NovaCommand message)
         {
-            Console.WriteLine("I got a NovaCommand!");
+            Console.WriteLine($"I got a NovaCommand! {message.Id} {message.Name}");
         }
     }
 }

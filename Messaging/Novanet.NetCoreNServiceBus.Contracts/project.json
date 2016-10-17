@@ -1,6 +1,6 @@
 ﻿{
   "name": "Novanet.NetCoreNServiceBus.Contracts",
-  "version": "1.0.0-*",
+  "version": "1.0.1-*",
   "buildOptions": {
     "debugType": "portable",
     "emitEntryPoint": false
