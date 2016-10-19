@@ -21,7 +21,6 @@ namespace Novanet.NetCoreNServiceBus.Handler.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] NovaModel data)
         {
-
             NovaCommand command = new NovaCommand()
             {
                 Id = data.Id,
