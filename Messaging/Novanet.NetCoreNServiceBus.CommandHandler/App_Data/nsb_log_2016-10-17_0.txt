@@ -5177,3 +5177,9 @@ Startup Tasks: None
 2016-10-17 15.38.25.634 INFO  NServiceBus.Satellites.SatelliteLauncher Stopped 3/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
 2016-10-17 15.38.26.584 INFO  NServiceBus.Satellites.SatelliteLauncher Stopped 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
 2016-10-17 15.38.26.603 INFO  NServiceBus.Unicast.UnicastBus Shutdown complete.
+2016-10-17 15.44.53.783 INFO  DefaultFactory Logging to 'C:\Users\LJ9\Documents\src\NetCoreNServiceBus\Messaging\Novanet.NetCoreNServiceBus.CommandHandler\App_Data\' with level Info
+2016-10-17 15.44.53.807 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2016-10-17 15.44.53.814 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2016-10-17 15.44.53.825 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2016-10-17 15.44.53.831 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2016-10-17 15.44.53.837 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.

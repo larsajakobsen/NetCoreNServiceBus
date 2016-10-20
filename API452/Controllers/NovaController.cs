@@ -18,25 +18,17 @@ namespace Novanet.NetCoreNServiceBus.Handler.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] NovaModel data)
         {
-
             NovaCommand command = new NovaCommand()
             {
                 Id = data.Id,
                 Name = data.Name
             };
 
-            try
-            {
-                var busConfiguration = GetBusConfig();
+            var busConfiguration = GetBusConfig();
 
-                using (var bus = Bus.Create(busConfiguration).Start())
-                {
-                    bus.Send("Novanet.NetCoreNServiceBus.Messaging", command);
-                }
-            }
-            catch (Exception ex)
+            using (var bus = Bus.Create(busConfiguration).Start())
             {
-                throw ex;
+                bus.Send("Novanet.NetCoreNServiceBus.Messaging", command);
             }
 
             return new StatusCodeResult(500);
@@ -51,7 +43,7 @@ namespace Novanet.NetCoreNServiceBus.Handler.Controllers
             busConfiguration.UseSerialization<NServiceBus.JsonSerializer>();
             busConfiguration.EnableInstallers();
             busConfiguration.UsePersistence<InMemoryPersistence>();
-
+            
             var conventions = busConfiguration.Conventions();
             conventions.DefiningCommandsAs(type =>
             {
