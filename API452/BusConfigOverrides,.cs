@@ -25,13 +25,13 @@ namespace Novanet.NetCoreNServiceBus.Handler
         }
     }
 
-    public class ConfigErrorQueue : IProvideConfiguration<MessageForwardingInCaseOfFaultConfig>
+    public class ErrorQueueConfig : IProvideConfiguration<MessageForwardingInCaseOfFaultConfig>
     {
         public MessageForwardingInCaseOfFaultConfig GetConfiguration()
         {
             return new MessageForwardingInCaseOfFaultConfig
             {
-                ErrorQueue = "novanet.netcoreservicebus.messaging.error"
+                ErrorQueue = "Novanet.NetCoreNServiceBus.Messaging.Error"
             };
         }
     }

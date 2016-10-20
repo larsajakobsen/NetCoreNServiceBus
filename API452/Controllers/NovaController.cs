@@ -43,7 +43,7 @@ namespace Novanet.NetCoreNServiceBus.Handler.Controllers
             busConfiguration.UseSerialization<NServiceBus.JsonSerializer>();
             busConfiguration.EnableInstallers();
             busConfiguration.UsePersistence<InMemoryPersistence>();
-            
+
             var conventions = busConfiguration.Conventions();
             conventions.DefiningCommandsAs(type =>
             {
